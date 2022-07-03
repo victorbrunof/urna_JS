@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="../src/style.css" />
+</head>
+<body>
+    <div class="urna">
+        <div class="screen">
+            <div class="d_1">
+                <div class="d_1_left">
+                    <div class="d_1_1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d_1_2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="d_1_3">
+                        <div class="number blink"></div>
+                        <div class="number"></div>
+                    </div>
+                    <div class="d_1_4">
+                        Nome: FULADO DE TAL<br />
+                        Partido: QQQ<br />
+                        Vice-Prefeito: Beltrado de tal<br />
+                    </div>
+                </div>
+                <div class="d_1_right">
+                    <div class="d_1_image">
+                        <img src="" alt="" />
+                        Prefeito
+                    </div>
+                    <div class="d_1_image small">
+                        <img src="" alt="" />
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="d_2">
+                Aperte a tela:<br />
+                CONFIRMA para CONFIRMAR este voto<br />
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="line_keyboard">
+                <div class="keyboard_button" onclick="clicked('1')">1</div>
+                <div class="keyboard_button" onclick="clicked('2')">2</div>
+                <div class="keyboard_button" onclick="clicked('3')">3</div>
+            </div>
+            <div class="line_keyboard">
+                <div class="keyboard_button" onclick="clicked('4')">4</div>
+                <div class="keyboard_button" onclick="clicked('5')">5</div>
+                <div class="keyboard_button" onclick="clicked('6')">6</div>
+            </div>
+            <div class="line_keyboard">
+                <div class="keyboard_button" onclick="clicked('7')">7</div>
+                <div class="keyboard_button" onclick="clicked('8')">8</div>
+                <div class="keyboard_button" onclick="clicked('9')">9</div>
+            </div>
+            <div class="line_keyboard">
+                <div class="keyboard_button" onclick="clicked('0')">0</div>
+            </div>
+            <div class="line_keyboard">
+                <div class="keyboard_button white_button" onclick="white()">BRANCO</div>
+                <div class="keyboard_button button_corrects" onclick="correct()">CORRIGE</div>
+                <div class="keyboard_button button_confirms" onclick="confirm()">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/javascript/phases.js"></script>
+    <script src="../src/javascript/script.js"></script>
+</body>
+</html>
